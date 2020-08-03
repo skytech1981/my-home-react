@@ -1,16 +1,16 @@
   
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Actor from './components/actor'
+import ActorsModel from './data-model/actorsmodel'
+
+
 
 function App() {
   return (
     <div className="App">
            <Actor/>
-           <Actor/>
-           <Actor/>
-           <Actor/>
+          <ActorsModel/>
     </div>
   );
 }
