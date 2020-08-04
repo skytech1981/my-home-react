@@ -3,44 +3,10 @@
 export const actorslist =
 [
   {
-    "name":"dave",
-    "age":"46",
+     "name":"George Clooney",
+    "born":"1961",
+    "img":"https://m.media-amazon.com/images/M/MV5BMjEyMTEyOTQ0MV5BMl5BanBnXkFtZTcwNzU3NTMzNw@@._V1_SY1000_CR0,0,735,1000_AL_.jpg",
   "gender":"male"
-  },
-  {
-    "name":"dog",
-    "age":"546",
-  "gender":"male"
-  },
-  {
-    "name":"Bave",
-    "age":"23",
-  "gender":"male"
-  },
-  {
-    "name":"romania",
-    "age":"16",
-  "gender":"female"
-  },
-  {
-    "name":"dave",
-    "age":"46",
-  "gender":"male"
-  },
-  {
-    "name":"dog",
-    "age":"546",
-  "gender":"male"
-  },
-  {
-    "name":"Bave",
-    "age":"23",
-  "gender":"male"
-  },
-  {
-    "name":"romania",
-    "age":"16",
-  "gender":"female"
   }
 ]
 

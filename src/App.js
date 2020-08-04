@@ -9,8 +9,7 @@ import Actors from "./components/actor"
 function App() {
   return (
     <div className="App" >
-      <Vip/>
-      <Actors/>
+           <Actors/>
           
     </div>
   );
