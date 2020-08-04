@@ -1,30 +1,51 @@
-import React from 'react';
-
-class Actorsmodel extends React.Component {
-    constructor(props){
-    super(props);
-    
-    }
-    
-      render() {
-        return (
-          <div className="card">
-            <div className="circle">
-
-            </div>
-              <h2 className="tagname">David</h2>
-              <h3 className="age">32</h3>
-            </div>
-        );
-      }
-     }
-    
 
 
+export const actorslist =
+[
+  {
+    "name":"dave",
+    "age":"46",
+  "gender":"male"
+  },
+  {
+    "name":"dog",
+    "age":"546",
+  "gender":"male"
+  },
+  {
+    "name":"Bave",
+    "age":"23",
+  "gender":"male"
+  },
+  {
+    "name":"romania",
+    "age":"16",
+  "gender":"female"
+  },
+  {
+    "name":"dave",
+    "age":"46",
+  "gender":"male"
+  },
+  {
+    "name":"dog",
+    "age":"546",
+  "gender":"male"
+  },
+  {
+    "name":"Bave",
+    "age":"23",
+  "gender":"male"
+  },
+  {
+    "name":"romania",
+    "age":"16",
+  "gender":"female"
+  }
+]
 
 
 
 
 
 
-export default Actorsmodel;

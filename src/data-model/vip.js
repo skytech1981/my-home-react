@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {vip_arr} from "../data-model/viplist.js"
 
+
 class Vip extends Component {
 state ={vip_ar:vip_arr}
     
