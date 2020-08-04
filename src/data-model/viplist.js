@@ -2,6 +2,15 @@ export const vip_arr =
 
 [
     {
+        "name":"Felix",
+        "worth":"$830B",
+        "birth_year":"1985",
+        "source":"Felix the house cat show",
+        "country":"Brazil",
+        "image":"https://sketchok.com/images/articles/01-cartoons/000-va/153/12.jpg"
+
+    },
+    {
         "name":"Bill Gates",
         "worth":"$90B",
         "birth_year":"1955",
