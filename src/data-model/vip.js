@@ -6,15 +6,20 @@ state ={vip_ar:vip_arr}
     
       render() {
         return (
-           <div className="container">
+               <div className="container">
                <div className="row">
-                   <div class="rounded col-lg-6 border m-2">
-                     <img src="https://specials-images.forbesimg.com/imageserve/59d502f931358e542c034e76/200x200.jpg?background=000000&cropX1=245&cropX2=2420&cropY1=636&cropY2=2813" class="rounded-circle float-left m-2"/>
-                    <h2>Name: Bill Gates</h2>
-                    <div>Company: Microsoft</div>
-                   </div>
-               </div>
-           </div>
+                   {this.state.vip_ar.map(item =>{return (<div class="rounded col-sm-5 border m-4">
+                     <img src={item.image} class="w-50% img-fluid img-thumbnail rounded-circle float-left m-4 mt-4 ml-3"/>
+                    <h2 class="bg-primary rounded mt-2">{item.name}</h2>
+                    <h4 class="bg-warning rounded">Company : {item.source}</h4>
+                    <h5 class="bg-light rounded">Country:{item.country}</h5>
+                    <h5 class="bg-light rounded">Birth Year:{item.birth_year}</h5>
+                    <h4 class="bg-success rounded">Value : {item.worth}</h4>
+                   </div>) })}
+                   
+            
+                 </div>
+               </div>     
         );
       }
      
