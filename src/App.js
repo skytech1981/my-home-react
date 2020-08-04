@@ -8,8 +8,9 @@ import Actors from "./components/actor"
 
 function App() {
   return (
-    <div className="App">
-         <Actors/>
+    <div className="App" >
+      <Vip/>
+      <Actors/>
           
     </div>
   );
