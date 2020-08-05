@@ -14,6 +14,7 @@ class Actor extends Component {
                <h2 className="bg-danger rounded mt-2">{item.name}</h2>
                <h4 className="bg-info rounded ">Age : {item.age}</h4>
                <h5 className="bg-light rounded  ">Gender:{item.gender}</h5>
+               <a className="d-block bg-warning rounded mb-2 " href={item.webpage}>Actor info</a>
                </div>) })}
                    
              </div>
