@@ -6,15 +6,15 @@ class Actor extends Component {
     
   render() {
     return (
-           <div className="container bg-dark d-flex justify-content-center " >
+           <div className="contain " >
            <div className="row d-flex justify-content-center ">
                {this.state.actors.map(item =>{return (
-               <div className=" rounded col-lg-4 border m-2">
-                 <img src={item.img} className=" img-fluid img-thumbnail rounded-circle  mt-4 "/>  
-               <h2 className="bg-danger rounded mt-2">{item.name}</h2>
-               <h4 className="bg-info rounded ">Age : {item.age}</h4>
-               <h5 className="bg-light rounded  ">Gender:{item.gender}</h5>
-               <a className="d-block bg-warning rounded mb-2 " href={item.webpage}  target="_blank">Actor info</a>
+               <div className="container rounded col-lg-4 bg-dark rounded m-4 ">
+                 <img src={item.img} className="img img-fluid rounded-20   mt-4 "/>  
+               <h2 className="name rounded mt-2 ">{item.name}</h2>
+               <h4 className="actordetails rounded mt-2">Born : {item.born}</h4>
+               <h5 className="actordetails rounded mt-2  ">Gender: {item.gender}</h5>
+               <a className="actorlink rounded mb-4 " href={item.webpage}  target="_blank">Actor info</a>
                </div>) })}
                </div>
            </div>     
