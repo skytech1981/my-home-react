@@ -57,6 +57,13 @@ export const actorslist =
   "img":"https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_.jpg",
   "gender":"Male",
   "webpage":"https://www.imdb.com/name/nm0000134/"
+},
+{
+  "name":"John Travolta",
+  "born":"1954",
+  "img":"https://m.media-amazon.com/images/M/MV5BMTUwNjQ0ODkxN15BMl5BanBnXkFtZTcwMDc5NjQwNw@@._V1_SY1000_CR0,0,743,1000_AL_.jpg",
+  "gender":"Male",
+  "webpage":"https://www.imdb.com/name/nm0000237"
 }
 
 
