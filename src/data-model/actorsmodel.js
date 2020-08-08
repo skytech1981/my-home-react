@@ -32,7 +32,7 @@ export const actorslist =
 },
 {
   "name":"Morgan Freeman",
-  "born":"1969",
+  "born":"1937",
   "img":"https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_.jpg",
   "gender":"Male",
   "webpage":"https://www.imdb.com/name/nm0000151"
