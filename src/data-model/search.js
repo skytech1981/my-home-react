@@ -19,13 +19,13 @@ this.State={
 
       render() {
         return (
-               <div className="container">
-                 <h2 className="heading">Live Search </h2>
+               <div className="container ">
+                 <h2 className="heading ">Live Search </h2>
                  <label className="search-label" htmlFor="search-input">
                     <input type="text"
                     value=""
                     id="search-input" 
-                    placeholder="search..."
+                    placeholder=" Search..."
                    />
                 <i class="fa fa-search" aria-hidden="true"/>
 
