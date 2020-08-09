@@ -9,7 +9,7 @@ import Search from './data-model/search';
 function App() {
   return (
     <div className="App" >
-           <Search/>
+          <Search/>
           <Actor/>
     </div>
   );
