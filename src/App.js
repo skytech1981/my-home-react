@@ -2,15 +2,15 @@
 import React from 'react';
 import './App.css';
 import Vip from './data-model/vip';
-import Actors from "./components/actor"
-
+import Actor from "../src/components/actor"
+import Search from './data-model/search';
 
 
 function App() {
   return (
     <div className="App" >
-           <Actors/>
-          
+           <Search/>
+          <Actor/>
     </div>
   );
 }

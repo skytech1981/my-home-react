@@ -1,0 +1,30 @@
+.container
+{
+margin: 36px auto;
+width: 100%;
+}
+.search-label
+{
+position: relative;
+
+}
+
+.container input
+{
+width: 200%;
+display: block;
+font-size: 37px;
+font-style: italic;
+color: #444;
+box-sizing:border-box;
+
+}
+
+.heading
+{
+font-size:70px;
+padding:36px 0px;
+color: #444;
+text-align: center;
+
+}
