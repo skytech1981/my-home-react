@@ -8,6 +8,7 @@ class Actor extends Component {
     return (
            <div className="contain " >
            <div className="row d-flex justify-content-center ">
+             {/* make filter like map  */}
                {this.state.actors.map(item =>{return (
                <div className="card rounded col-lg-3 bg-light rounded m-4 ">
                  <img src={item.img} className="img img-fluid rounded-20 mt-4 "/>  
