@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{Component, useCallback} from 'react';
 import '../search.css';
 import Axois from 'axios';
  
@@ -13,25 +13,47 @@ this.State={
              messege:''   
 
             }
-          } ;     
+this.cancel='';
+
+
+
+          }    
+
 
 
 
 fetchSearchResults = (updatedPageNo,query) =>
 {
-  const searchUrl ="https://pixabay.com/api/?key=17841586-73b8fef4ec2134af5a3e4e14a&q=${query}$page=4";
+  const PageNumber = updatedPageNo ? ' &page=4${updatedPageNo}' : '';
+  const searchUrl ="https://pixabay.com/api/?key=17841586-73b8fef4ec2134af5a3e4e14a&q=${query}";
+ 
+  if(this.cancel){ this.cancel.cancel();}
+  this.cancel=Axois.CancelToken.source();
+
+  Axois.get(searchUrl,{cancelToken:this.cancel.token})
+  .then( res => {
+   const resultNotFoundMsg = 
+   console.warn(res);
+  })
+  .catch(error=>{ 
+if (Axois.isCancel(error) || error ) {
+this.setState({
+loading:false,
+
+messege:"failed to fetch the data . please check network"
+           })
+      }
+  })
 };
-
-
 
 handleOnInputChange = ( event ) => {
 const query = event.target.value;
-this.setState({query:query,loading:true,messege:''});
+this.setState({query:query,loading:true,messege:''}, () =>{
+  this.fetchSearchResults(1, query); 
+} );
 }; 
-
-     
-  
  
+
       render() {
         const {query}=this.setState
      
