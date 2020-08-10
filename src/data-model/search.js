@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import '../search.css'
 
  
@@ -7,28 +7,37 @@ class Search extends React.Component {
     super(props);
 
 this.State={
-             query:'',
+             query:"",
              result:{},
              loading:false,
              messege:''   
 
             }
-        }       
+          } ;     
 
-handleonInputChange = (event) => {
+handleOnInputChange = ( event ) => {
 const query = event.target.value;
-// this.setState(state: {query:query});
+this.setState({query:query});
+}; 
 
-
-};  
-
+     
+  
+ 
       render() {
+        const {query}=this.setState
+     
+     
         return (
                <div className="container ">
                  <h2 className="heading "> Live Actors Search  </h2>
                  <label className="search-label" htmlFor="search-input">
-                    <input type="text" name="" value="" id="search-input"            placeholder=" Search..."
-                    onChange={this.handleonInputChange}
+                    <input  
+                    type="text" 
+                    name="query"
+                    // value={query}
+                    id="search-input" 
+                    placeholder=" Search..."
+                    onChange={this.handleOnInputChange}
                    />
                 <i class="fa fa-search search-icon" aria-hidden="true"/>
 
@@ -37,6 +46,10 @@ const query = event.target.value;
          );
       }
      
+
+  newMethod() {
+    return this.state;
+  }
 }
 
 export default Search 

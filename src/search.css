@@ -1,7 +1,9 @@
 .container
 {
-    max-width: 400%;
-    background-image: linear-gradient(violet,pink,red);
+  margin: 36px auto;
+  width: 100%;
+  max-width: 800px;
+  
     
     
 }
@@ -24,6 +26,7 @@ color: #444;
 box-sizing:border-box;
 border-radius: 20px;
 cursor: pointer;
+margin-bottom: 20px;
 }
 
 .heading
