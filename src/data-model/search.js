@@ -19,8 +19,8 @@ this.State={
 
 fetchSearchResults = (updatedPageNo,query) =>
 {
-  const searchUrl ="https://pixabay.com/api/?key=17841586-73b8fef4ec2134af5a3e4e14a&q=${query}${pageNumber}";
-}
+  const searchUrl ="https://pixabay.com/api/?key=17841586-73b8fef4ec2134af5a3e4e14a&q=${query}$page=4";
+};
 
 
 

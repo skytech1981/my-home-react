@@ -1,10 +1,10 @@
 .container
 {
-  margin: 36px auto;
-  width: 100%;
-  max-width: 800px;
   
-    
+  width: 100%;
+  max-width: 400%;
+  background-image: linear-gradient(violet,pink,red);
+   
     
 }
 .search-label
