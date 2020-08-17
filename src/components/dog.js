@@ -18,8 +18,9 @@ class Dogs extends Component {
             console.log(dogs)
             this.setState({ dogs });
          
+            })
           }
-      }
+    
     
       render() {
         console.log("render", this.state.dogs);
