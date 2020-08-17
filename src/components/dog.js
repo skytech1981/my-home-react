@@ -28,11 +28,6 @@ class Dogs extends Component {
         const displayDog = filtered.map(dogs => <li>{dogs}</li>)
 
 
-        // dogs.filter(dogs => dogs.includes('aki')).map(filteredName => (
-        //     <li>
-        //       {filteredName}
-        //     </li>
-        // ));
 
         return (
             <div>
