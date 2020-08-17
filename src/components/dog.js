@@ -1,8 +1,7 @@
 import React,{Component} from 'react';
 import {dogslist} from "../data-model/dogslist.js"
 import axios from 'axios';
-
-
+import Card from './card'
 
 class Dogs extends Component {
     state = {
@@ -25,7 +24,8 @@ class Dogs extends Component {
       render() {
         console.log("render", this.state.dogs);
         const filtered = this.state.dogs.filter(dog => dog.includes(this.state.inputDog))
-        const displayDog = filtered.map(dogs => <li>{dogs}</li>)
+        // const displayDog = filtered.map(dogs => <li>{dogs}</li>)
+        const displayDog = filtered.map(dogs => <Card name={dogs}/>)
 
 
 

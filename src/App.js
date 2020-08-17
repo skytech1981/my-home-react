@@ -10,6 +10,7 @@ import Dogs from './components/dog';
 function App() {
   return (
     <div className="App" >
+    
              <Dogs/>
     </div>
   );
